@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/461cf30b3d.js" crossorigin="anonymous"></script>
+  <title>Create Project 2</title>
+</head>
+
+<body>
+  <!--First nav bar -->
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="#"style="color:black"> <i class="fas fa-user-circle"></i> My Account</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:black"> <i class="fas fa-list"></i> Wishlist</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" style="color:black"> <i class="fas fa-heart"></i> Liked</a>
+        <a class="dropdown-item" href="#" style="color:black"> <i class="fas fa-save"></i> Saved</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:black"> <i class="fas fa-language" ></i> language</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">ENGLISH</a>
+        <a class="dropdown-item" href="#">SPANISH</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:black">About</a>
+    </li>
+  </ul>
+
+  <div class="product-big-title-area">
+
+  <div class="containers">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="product-bit-title text-center">
+                  <h2>Sharks Food</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!--Navbar
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent flex-nowrap">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> <i class="fas fa-home"></i>  Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-headset"></i>  Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-question"></i>  Q&A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-bug"></i>  Report</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent flex-nowrap">
+      <span class="navbar-brand w-100"></span>
+      <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color:black"> <i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:black"><i class="fas fa-headset"></i> Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:black"><i class="fas fa-question"></i> Q&A</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:black"><i class="fas fa-bug"></i> Report</a>
+            </li>
+          </ul>
+      </div>
+      <div class="w-100"><!--spacer--></div>
+  </nav>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- food -->
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <div class="meal-search-box">
+
+          <input type="text" class="search-control" placeholder="Search recipes by your ingredient" id="search-input">
+
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+        </div>
+      </div>
+
+
+      <div class="meal-details">
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="meal-details-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+<div class="footer-top-area">
+    <div class="zigzag-bottom"></div>
+    <div class="containers">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-about-us">
+                    <h2><span>Shark Food</span></h2>
+                    <p>Welcome! Hope you find everything ok at RUBY Shark</p>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-menu">
+                    <h2 class="footer-wid-title">User Navigation </h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Language</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-menu">
+                    <h2 class="footer-wid-title">Change Region</h2>
+                    <ul>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Oceania</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-newsletter">
+                    <h2 class="footer-wid-title">Newsletter</h2>
+                    <p>If you want to get the latest news from us feel free tp subscribe</p>
+                    <div class="newsletter-form">
+                        <form action="#">
+                            <input type="email" placeholder="Type your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer-bottom-area">
+  <div class="containers">
+    <div class="row">
+        <div class="col-md-8">
+              <p><a href="https://github.com/BYU-CS-260-Winter-2021/lab-2-weather-app-wan18005" target="_blank">github.com/BYU-CS-260-Winter-2021/lab-2-weather-app-wan18005</a></p>
+        </div>
+    </div>
+  </div>
+ </div>
+
+</html>
